@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8"/>
+		<title>Formulario fórmula 1</title>
+	</head>
+	<body background="img/fondo.jpg">
+		<header align="center">
+            <h1><img src="img/logo-F1.png" width="64px">Fórmula 1<img src="img/logo-F1.png" width="64px"></h1>
+        </header>
+		<form action="manejador.html" method="get">
+            <fieldset>
+				<legend>1. Datos personales</legend>
+				<label>Nombre y apellidos: <input type="text" name="nombre" maxlength="50" size="50" required/></label> Domicilio: <input type="text" name="domicilio" size="30"> <input type="hidden" name="f1" value="f1"></p>
+                <p>Correo electronico: <input type="email" name="correo" /> Teléfono: <input type="tel" placeholder="Prefijo de pais y numero"></p>
+                <p><label>Contraseña: <input type="password"></label></p>
+            </fieldset>
+            <fieldset>
+                <legend>2. Informacion adicional</legend>
+                <input type="radio" name="sexo"/>Hombre<br/>
+                <input type="radio" name="sexo" />Mujer<br/>
+                <input type="radio" name="sexo" />Prefiero no decirlo
+                <p>Eres mayor de edad: Si <input type="checkbox" name="si"/> No <input type="checkbox" name="no"></p> 
+                <p>Edad:<input type="text" min="18" max="99" placeholder="18-99"></p>
+            </fieldset>
+            <fieldset>
+                <legend>3. Preguntas acerca de la fórmula 1</legend>
+                <p>¿Crees que es Fernando Alonso el mejor piloto de la historia? <input type="text" name="si" value="SI" readonly size="2">
+                <p>¿Has visto recientemente alguna carrera? <input type="text" name="carrera"></p>
+                <p>¿Cual es tu piloto favorito? Elige dos: 
+                    <select name="piloto" multiple>
+                        <option value="ham">Lewis Hamilton</option>
+                        <option value="bot">Valtteri Bottas</option>
+                        <option value="ver">Max Verstappen</option>
+                        <option value="per">Sergio Pérez</option>
+                        <option value="mer">Fernando Alonso</option>
+                        <option value="oco">Esteban Ocon</option>
+                        <option value="vet">Sebastian Vettel</option>
+                        <option value="str">Lance Stroll</option>
+                        <option value="nor">Lando Norris</option>
+                        <option value="ric">Daniel Ricciardo</option>
+                        <option value="lec">Charles Leclerc</option>
+                        <option value="sai">Carlos Sainz</option>
+                        <option value="rus">George Russell</option>
+                        <option value="lat">Nicholas Latifi</option>
+                        <option value="maz">Nikita Mazepin</option>
+                        <option value="sch">Mick Schumacher</option>
+                        <option value="gas">Pierre Gasly</option>
+                        <option value="tsu">Yuki Tsunoda</option>
+                        <option value="rai">Kimi Räikkönen</option>
+                        <option value="gio">Antonio Giovinazzi</option>
+                    </select>
+                </p>
+                <p>¿Y tu escuderia favorita? 
+                    <select name="escuderia">
+                        <option value="mer">Mercedes</option>
+                        <option value="red">Red Bull</option>
+                        <option value="mcl">McLaren</option>
+                        <option value="ast">Aston Martin</option>
+                        <option value="alp">Alpine</option>
+                        <option value="fer">Ferrari</option>
+                        <option value="wil">Williams</option>
+                        <option value="alp">Alpha Tauri</option>
+                        <option value="alf">Alfa Romeo</option>
+                        <option value="has">Haas</option>
+                    </select>
+                </p>
+                <p>¿Cual es el circuito que más te gusta? <input type="text" name="circuito"></p>
+                <p>Te han gustado las anteriores páginas:<br/>
+                    <textarea rows="5" cols="40" name="opinion"></textarea>    
+                </p>
+                <p>Sube una foto de tu coche favorito: <input type="file" name="archivosubido"></p>
+            </fieldset>
+            <p><input type="submit" value="Enviar formulario" /> <input type="reset" value="Reiniciar formulario" />
+            <button type="submit" onclick="javascript:alert('Próxima carrera: GP de México del 5 al 7 de Noviembre\nGP de Brasil del 12 al 14 de Noviembre')">Próxima carrera</button>
+		</form>
+        <footer>
+            <nav>
+                <p>Primer documento:<a href="LMSGI_UT2_01.html" target="blank"><img src="img/logo-F1.png" width="64px" alt="Primer documento"></a></p>
+                <p>Segundo documento:<a href="LMSGI_UT2_02.html" target="blank"><img src="img/logo-F1.png" width="64px" alt="Segundo documento"></a></p>
+            </nav>
+            <address align="right">
+            Juan Francisco Guerrero Caravaca<br/>
+            jguerrerocar@gmail.com
+            </address>
+        </footer>
+	</body>
+</html>
